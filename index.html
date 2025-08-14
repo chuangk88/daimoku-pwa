@@ -18,13 +18,16 @@
       overflow: hidden;
     }
     .app-frame {
-      width: 100vw;
-      height: 100vh;
       border: none;
       display: block;
+      transform: scale(0.75);
+      transform-origin: top left;
+      width: 134%; /* compensate for scale */
+      height: 134%;
     }
-    /* iOS notch safe area */
-    body { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+    body {
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
   </style>
 </head>
 <body>
@@ -40,3 +43,4 @@
   </script>
 </body>
 </html>
+
